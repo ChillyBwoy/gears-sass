@@ -1,4 +1,4 @@
-var sys    = require('util'),
+var sys    = require('sys'),
     fs     = require('fs'),
     sass   = require('node-sass'),
     source = '';
