@@ -31,3 +31,7 @@ If you use Gears in your Django project, add this code to its settings:
     GEARS_COMPILERS = {
         '.scss': 'gears_sass.SASSCompiler',
     }
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/ChillyBwoy/gears-sass/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
