@@ -3,7 +3,7 @@ var sys    = require('sys'),
     sass   = require('node-sass'),
     paths  = process.argv.slice(2),
     source = '';
-// console.log(paths)
+
 process.stdin.resume();
 process.stdin.setEncoding('utf8');
 
@@ -19,8 +19,7 @@ process.stdin.on('end', function() {
         includePaths: paths || [],
         success: function (css, err) {
             if (err) {
-                console.log(err);
-                throw 'ebugebrugberug';
+                throw err;
             }
             process.stdout.write(css);
         }
