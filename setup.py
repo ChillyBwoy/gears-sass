@@ -1,12 +1,13 @@
 import os
 from setuptools import setup, find_packages
 
+
 def read(filename):
     return open(os.path.join(os.path.dirname(__file__), filename)).read()
 
 setup(
     name='gears-sass',
-    version='0.1.4',
+    version='0.2',
     license='ISC',
     author='Eugene Cheltsov',
     author_email='chill.icp@gmail.com',
@@ -14,7 +15,7 @@ setup(
     long_description=read('README.md'),
     packages=find_packages(),
     include_package_data=True,
-    keywords = 'gears django-gears gears-sass gears-scss',
+    keywords='gears django-gears gears-sass gears-scss',
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',

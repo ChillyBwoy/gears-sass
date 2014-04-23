@@ -1,0 +1,7 @@
+@import "testdata.scss";
+
+.test-import {
+  color: $test_color;
+  height: $test_height;
+  width: $test_width;
+}

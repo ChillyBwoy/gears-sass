@@ -1,0 +1,7 @@
+$color: #FF00FF;
+$border: 1px solid $color;
+
+.test-variables {
+  border: $border;
+  color: $color;
+}

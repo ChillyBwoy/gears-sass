@@ -1,0 +1,11 @@
+@mixin test-mixin {
+  background: {
+    color: red;
+    image: url('../images/test.png');
+    repeat: no-repeat;
+  }
+}
+
+.test-mixin {
+  @include test-mixin;
+}

@@ -1,0 +1,4 @@
+.test-mixin {
+  background-color: red;
+  background-image: url('../images/test.png');
+  background-repeat: no-repeat; }
