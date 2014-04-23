@@ -1,7 +1,10 @@
 gears-sass
 ==================
 
-SASS/SCSS compiler for Gears. 
+SCSS compiler for Gears. 
+
+Bundled [node-sass](https://github.com/andrew/node-sass) version: 0.8.6
+
 
 Installation
 ------------
@@ -13,9 +16,7 @@ Install `gears-sass` with pip:
 
 Requirements
 ------------
-
 - [node.js](http://nodejs.org)
-- [node-sass](https://github.com/andrew/node-sass)
 
 
 Usage
