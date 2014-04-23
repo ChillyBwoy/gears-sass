@@ -11,6 +11,7 @@ setup(
     license='ISC',
     author='Eugene Cheltsov',
     author_email='chill.icp@gmail.com',
+    url='https://github.com/ChillyBwoy/gears-sass',
     description='SASS compiler for Gears',
     long_description=read('README.md'),
     packages=find_packages(),
