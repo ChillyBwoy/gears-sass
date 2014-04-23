@@ -1,6 +1,7 @@
 import os
 from gears.compilers import ExecCompiler
 
+
 class SASSCompiler(ExecCompiler):
     result_mimetype = 'text/css'
     executable = 'node'

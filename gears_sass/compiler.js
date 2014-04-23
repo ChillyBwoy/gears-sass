@@ -11,10 +11,16 @@ process.stdin.on('data', function(chunk) {
 });
 
 process.stdin.on('end', function() {
-    sass.render(source, function(err, css) {
-        if (err) {
-            throw err;
+    sass.render({
+        data: source,
+        // outputStyle: 'nested|compressed',
+        // sourceComments: 'none|normal',
+        // includePaths: [],
+        success: function (css, err) {
+            if (err) {
+                throw err;
+            }            
+            process.stdout.write(css);
         }
-        process.stdout.write(css);
-    });
+    })
 });

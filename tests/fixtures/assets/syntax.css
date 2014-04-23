@@ -1,0 +1,9 @@
+.css-class {
+  background: red;
+  border-top: 1px solid #000;
+  border-left: 2px dashed #000;
+}
+
+.css-class .css-class_in {
+  outline: 1px solid #fff;
+}
