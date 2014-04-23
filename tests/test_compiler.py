@@ -58,3 +58,7 @@ class CompilerTest(unittest.TestCase):
     def test_import(self):
         scss, css, output = fixture_load('import')
         self.assertEqual(css, output)
+
+    def test_image(self):
+        scss, css, output = fixture_load('image')
+        self.assertEqual(css, output)

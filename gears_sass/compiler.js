@@ -1,7 +1,7 @@
 var sys    = require('sys'),
     fs     = require('fs'),
     sass   = require('node-sass'),
-    paths  = process.argv.slice(2),
+    paths  = process.argv.slice(2) || [],
     source = '';
 
 process.stdin.resume();
@@ -16,12 +16,14 @@ process.stdin.on('end', function() {
         data: source,
         outputStyle: 'nested',      //nested|compressed|expanded
         sourceComments: 'none',     //none|normal
-        includePaths: paths || [],
-        success: function (css, err) {
-            if (err) {
-                throw err;
-            }
+        includePaths: paths,
+        imagePath: '/static',
+        success: function (css) {
             process.stdout.write(css);
+        },
+        error: function (error) {
+            throw error;
         }
+
     })
 });
