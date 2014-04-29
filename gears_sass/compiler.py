@@ -22,5 +22,5 @@ class SASSCompiler(ExecCompiler):
     def get_args(self):
         args = super(SASSCompiler, self).get_args()
         args.append(os.path.dirname(self.asset.absolute_path))
-        args.extend(self.paths)
+        args.extend(self.asset.attributes.environment.paths)
         return args
